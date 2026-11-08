@@ -7,10 +7,12 @@
 
 ### [▶ Live demo: bernhardbrugger.github.io/qr-beam](https://bernhardbrugger.github.io/qr-beam/)
 
-<!-- TODO: record a short screen+phone capture and save it as docs/demo.gif -->
+<!-- Demo GIF placeholder: record a short screen+phone capture to docs/demo.gif, then uncomment the next lines. -->
+<!--
 <p align="center">
-  <img src="docs/demo.gif" alt="Demo GIF (placeholder, not recorded yet): a file travelling from one screen to a phone camera" width="720">
+  <img src="docs/demo.gif" alt="A file travelling from one screen to a phone camera" width="720">
 </p>
+-->
 
 One screen shows a fast stream of QR codes, a camera on the other side collects them and rebuilds
 the file. No server, no network, no Bluetooth, no pairing, no install. `index.html` is the whole
