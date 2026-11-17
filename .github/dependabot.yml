@@ -1,0 +1,19 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      # test tooling only; one PR per week for minor and patch updates
+      test-tooling:
+        patterns: ['playwright']
+        update-types: ['minor', 'patch']
+    # qrcode-generator and jsqr are inlined into index.html. A bump of either one
+    # gets its own PR, and CI stays red (test/vendor.test.js) until someone runs
+    # `npm run vendor` on that branch and commits the new inline copy.
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
